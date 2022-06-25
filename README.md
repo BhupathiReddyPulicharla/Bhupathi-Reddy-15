@@ -1,1 +1,25 @@
-# Bhupathi-Reddy-15
+The main advantage of CNN compared to its predecessors is that it automatically detects the important features without any human supervision. For example, given many pictures of cats and dogs it learns distinctive features for each class by itself. CNN is also computationally efficient.
+Because consecutive layers are only partially connected and because it heavily reuses its weights, a CNN has many fewer parameters than a fully connected DNN, which makes it much faster to train, reduces the risk of overfitting, and requires much less training data.
+Example: Input volumn of 32x32x3, what is the output size if we're to apply 10 5x5 filters with stride 1 and pad 2. And what is the total number of weights for this layer? The output width and the height will be ( 32 - 5 + 2 * 2 ) / 1 + 1 = 32 and the depth will be 10.
+In other words we will need two (3x3x3) kernels, or equivalently we can say that we trained six different (3x3) masks. So we use two 3x3x3 kernels to perform convolutions to go from a 32x32x3 input image to two different 32x32 feature maps (32x32x3 to 32x32x2).
+If your GPU runs out of memory while training a CNN, what are five things you could try to solve the problem? Reduce the mini-batch size. Reduce dimensionality using a larger stride in one or more layers. Remove one or more layers.
+The main advantage of CNN compared to its predecessors is that it automatically detects the important features without any human supervision. For example, given many pictures of cats and dogs it learns distinctive features for each class by itself. CNN is also computationally efficient.
+Max-pooling helps in extracting low-level features like edges, points, etc. While Avg-pooling goes for smooth features. If time constraint is not a problem, then one can skip the pooling layer and use a convolutional layer to do the same.
+A conv-layer has parameters to learn (that is your weights which you update each step), whereas the pooling layer does not - it is just applying some given function e.g max-function.
+Local Response Normalization (LRN) was first introduced in AlexNet architecture where the activation function used was ReLU as opposed to the more common tanh and sigmoid at that time. Apart from the reason mentioned above, the reason for using LRN was to encourage lateral inhibition.
+In biological brain functionality, there is a concept called lateral inhibition. This refers to the capacity of one stimulated neuron to bring its neighbors under control. The main agenda for us is to have a local peak value for finding the maximum value in the neighborhood.
+The main innovation introduced by AlexNet compared to the LeNet-5 was its sheer size. AlexNet main elements are the same: a sequence of convolutional and pooling layers followed by a couple of fully-connected layers.
+The number of classes AlexNet was able to handle compared to LeNet also increased significantly from a mere 10 to 1000. Consequently, it was also trained on a much larger dataset comprising millions of images. AlexNet can process full RGB images (with three color channels) at a total size of 227x227x3.
+Increase the Accuracy of Your CNN by Following These 5 Tips I Learned From the Kaggle Community
+Use bigger pre-trained models.
+Use K-Fold Cross Optimization.
+Use CutMix to augment your images.
+Use MixUp to augment your images.
+Using Ensemble learning.
+Inception-v3 is a pre-trained convolutional neural network model that is 48 layers deep. It is a version of the network already trained on more than a million images from the ImageNet database. It is the third edition of Inception CNN model by Google, originally instigated during the ImageNet Recognition Challenge.
+Image classification is a supervised learning problem: define a set of target classes (objects to identify in images), and train a model to recognize them using labeled example photos. Early computer vision models relied on raw pixel data as the input to the model.
+Random crop is a data augmentation technique wherein we create a random subset of an original image. This helps our model generalize better because the object(s) of interest we want our models to learn are not always wholly visible in the image or the same scale in our training data.
+Inception v3 is an image recognition model that has been shown to attain greater than 78.1% accuracy on the ImageNet dataset. The model is the culmination of many ideas developed by multiple researchers over the years.
+The simplest way to split the modelling dataset into training and testing sets is to assign 2/3 data points to the former and the remaining one-third to the latter. Therefore, we train the model using the training set and then apply the model to the test set. In this way, we can evaluate the performance of our model.
+Separating data into training and testing sets is an important part of evaluating data mining models. Typically, when you separate a data set into a training set and testing set, most of the data is used for training, and a smaller portion of the data is used for testing.
+A common strategy is to take all available labeled data, and split it into training and evaluation subsets, usually with a ratio of 70-80 percent for training and 20-30 percent for evaluation.
